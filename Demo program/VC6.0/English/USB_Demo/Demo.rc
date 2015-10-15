@@ -1,0 +1,422 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Demo.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Demo.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 Demo"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Demo 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2010",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_DEMO_DIALOG DIALOGEX 0, 0, 649, 419
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Demo"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",0x0,7,7,361,354
+    GROUPBOX        "Data",IDC_STATIC,378,7,262,354
+    PUSHBUTTON      "Clear",IDC_BUTTON1,538,370,76,18
+    EDITTEXT        IDC_EDIT2,383,16,250,338,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL
+END
+
+IDD_SYSTEMSETTING DIALOG DISCARDABLE  0, 0, 243, 195
+STYLE WS_CHILD
+FONT 9, "@新宋体"
+BEGIN
+    GROUPBOX        "System commands",IDC_STATIC,7,7,229,181
+    LTEXT           "SetSerNum:",IDC_STATIC,14,23,41,17
+    EDITTEXT        IDC_EDIT1,62,21,100,16,ES_AUTOHSCROLL
+    PUSHBUTTON      "Set serNum",IDC_BUTTON1,171,23,50,13
+    LTEXT           "Read SerNum",IDC_STATIC,13,54,59,31
+    PUSHBUTTON      "Get serNum",IDC_BUTTON2,171,53,51,16
+    LTEXT           "Led:",IDC_STATIC,16,86,28,13
+    EDITTEXT        IDC_LEDCYCLE,48,84,24,13,ES_AUTOHSCROLL
+    LTEXT           "Cycle",IDC_STATIC,81,85,27,13
+    EDITTEXT        IDC_LEDTIMES,112,82,32,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Set LED",IDC_BUTTON3,177,80,43,18
+    LTEXT           "Buzzer:",IDC_STATIC,15,110,26,15
+    EDITTEXT        IDC_BUZZERCYCLE,46,109,27,14,ES_AUTOHSCROLL
+    LTEXT           "Times",IDC_STATIC,149,84,25,13
+    EDITTEXT        IDC_BUZZERTIMERS,112,108,32,18,ES_AUTOHSCROLL
+    PUSHBUTTON      "Set Buzzer",IDC_BUTTON4,177,108,44,21
+    LTEXT           "Cycle",IDC_STATIC,81,110,27,13
+    LTEXT           "Times",IDC_STATIC,150,112,19,13
+    LTEXT           "Get Version:",IDC_STATIC,18,151,49,8
+    PUSHBUTTON      "Get Version",IDC_BUTTON5,174,144,50,14
+END
+
+IDD_14443A_MF DIALOG DISCARDABLE  0, 0, 402, 328
+STYLE WS_CHILD
+FONT 9, "@新宋体"
+BEGIN
+    GROUPBOX        "type A",IDC_STATIC,7,7,388,314
+    LTEXT           "Read",IDC_STATIC,12,21,18,8
+    COMBOBOX        IDC_READ,33,18,32,43,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           " Read mode",IDC_STATIC,105,20,44,8
+    PUSHBUTTON      "Read",IDC_READCARD,243,45,39,13
+    COMBOBOX        IDC_READSTARTADDRESS,171,32,25,48,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "The Start Address of Block to be read",IDC_STATIC,12,33,
+                    148,16
+    LTEXT           "number of Block to be read",IDC_STATIC,207,21,108,15
+    LTEXT           "Write",IDC_STATIC,11,74,19,8
+    COMBOBOX        IDC_WRITE,35,71,32,40,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           " Write mode",IDC_STATIC,104,74,44,8
+    PUSHBUTTON      "Write",IDC_WRITECARD,246,91,39,13
+    LTEXT           "The Start Address of Block to be write",IDC_STATIC,12,
+                    89,154,16
+    LTEXT           "number of Block to be write",IDC_STATIC,207,70,114,15
+    COMBOBOX        IDC_WRITESTARTADDRESS,169,88,30,46,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_WRITEBLOCKNUMBER,319,69,29,50,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "The Six Bytes Blocks Key ",IDC_STATIC,13,105,98,15
+    LTEXT           "The Data for Write to Card",IDC_STATIC,12,122,104,18
+    COMBOBOX        IDC_WRITEBLOCKKEY,113,104,86,51,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_WRITEDATA,122,122,224,13,ES_AUTOHSCROLL
+    LTEXT           "The Six Byte Block Key",IDC_STATIC,11,50,91,13
+    COMBOBOX        IDC_READBLOCKKEY,111,49,85,50,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_READMODE,153,17,43,40,CBS_DROPDOWN | WS_VSCROLL
+    COMBOBOX        IDC_WRITEMODE,155,73,43,34,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "initVal",IDC_STATIC,14,150,29,8
+    COMBOBOX        IDC_INITVAL,60,149,32,41,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_INITVALMODE,121,149,36,39,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_INITVALSECTOR,180,149,28,16,ES_AUTOHSCROLL
+    LTEXT           "Sector",IDC_STATIC,217,151,36,15
+    EDITTEXT        IDC_INITVALKEY,61,167,80,16,ES_AUTOHSCROLL
+    LTEXT           "KEY",IDC_STATIC,149,168,36,20
+    EDITTEXT        IDC_INITVALVALUE,190,167,57,18,ES_AUTOHSCROLL
+    LTEXT           "Value",IDC_STATIC,254,170,27,19
+    PUSHBUTTON      "initialization",IDC_INITIALIZATION,283,149,61,22
+    LTEXT           "Decrement",IDC_STATIC,13,200,42,12
+    COMBOBOX        IDC_DECREMENT,62,199,31,36,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_DECREMENTMODE,122,198,36,41,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_DECREMENTSECTOR,181,197,39,17,ES_AUTOHSCROLL
+    LTEXT           "Sector",IDC_STATIC,228,201,30,15
+    EDITTEXT        IDC_DECREMENTKEY,62,216,78,19,ES_AUTOHSCROLL
+    LTEXT           "KEY",IDC_STATIC,150,219,32,19
+    EDITTEXT        IDC_DECREMENTVALUE,189,218,64,19,ES_AUTOHSCROLL
+    LTEXT           "Value",IDC_STATIC,258,220,26,21
+    PUSHBUTTON      "DeValue",IDC_BUTTON2,285,203,60,21
+    LTEXT           "Increment",IDC_STATIC,17,251,42,12
+    COMBOBOX        IDC_INCREMENT,62,250,36,36,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_INCREMENTMODE,121,248,46,38,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_INCREMENTSECTOR,175,249,40,14,ES_AUTOHSCROLL
+    LTEXT           "Sector",IDC_STATIC,225,250,30,15
+    EDITTEXT        IDC_INCREMENTKEY,62,268,81,18,ES_AUTOHSCROLL
+    LTEXT           "KEY",IDC_STATIC,153,273,13,8
+    EDITTEXT        IDC_INCREMENTVALUE,189,267,66,17,ES_AUTOHSCROLL
+    LTEXT           "Value",IDC_STATIC,257,271,25,16
+    PUSHBUTTON      "AddValue",IDC_BUTTON3,285,251,59,18
+    LTEXT           "GET_SNR",IDC_STATIC,17,299,42,16
+    COMBOBOX        IDC_GETSNR,62,299,43,36,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_GETSNRHALT,144,299,42,48,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "card number",IDC_BUTTON4,285,295,60,17
+    COMBOBOX        IDC_READBLOCKNUMBER,317,20,31,66,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_ULTRALIGHT DIALOG DISCARDABLE  0, 0, 220, 245
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    LTEXT           "Read card series number",IDC_STATIC,7,10,90,15
+    PUSHBUTTON      "Read",IDC_BUTTON1,148,7,60,19
+    COMBOBOX        IDC_CARDSERIESNUMBER,99,11,40,43,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Halt:",IDC_STATIC,12,37,47,18
+    PUSHBUTTON      "Halt",IDC_BUTTON2,168,38,38,14
+    LISTBOX         IDC_LIST1,18,71,53,134,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST2,112,73,47,130,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Read",IDC_BUTTON3,66,213,37,15
+    PUSHBUTTON      "Write",IDC_BUTTON4,171,213,30,14
+    COMBOBOX        IDC_ULTRALIGHTREAD,18,214,39,34,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ULTRALIGHTWRITE,113,214,34,36,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_DATA_EDIT,165,187,46,13,ES_AUTOHSCROLL
+END
+
+IDD_14443B DIALOG DISCARDABLE  0, 0, 260, 256
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "14443B commands",IDC_STATIC,7,7,246,135
+    LTEXT           "Request _TypeB",IDC_STATIC,14,21,70,14
+    PUSHBUTTON      "Request",IDC_BUTTON1,184,22,59,16
+    EDITTEXT        IDC_EDIT1,14,39,80,16,ES_AUTOHSCROLL
+    LTEXT           "The data length for sending",IDC_STATIC,104,42,116,20
+    EDITTEXT        IDC_EDIT2,14,66,231,17,ES_AUTOHSCROLL
+    LTEXT           "data:",IDC_STATIC,15,94,37,16
+    PUSHBUTTON      "TypeB_Transfer",IDC_BUTTON2,183,95,60,17
+    GROUPBOX        "China identity card UID",IDC_STATIC,7,150,246,99
+    PUSHBUTTON      "SFZ UID",IDC_BUTTON3,183,163,59,15
+END
+
+IDD_15693 DIALOG DISCARDABLE  0, 0, 284, 209
+STYLE WS_CHILD
+FONT 9, "@新宋体"
+BEGIN
+    GROUPBOX        "15693 commands",IDC_STATIC,7,7,270,195
+    LTEXT           "Inventory:",IDC_STATIC,14,24,41,15
+    PUSHBUTTON      "Inventory",IDC_BUTTON1,168,19,60,17
+    LTEXT           "Read:",IDC_STATIC,15,44,20,8
+    EDITTEXT        IDC_EDIT1,37,41,20,14,ES_AUTOHSCROLL
+    LTEXT           "flag",IDC_STATIC,63,43,21,8
+    LTEXT           "Start area",IDC_STATIC,108,44,43,8
+    EDITTEXT        IDC_EDIT2,85,41,18,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,153,42,21,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Read",IDC_BUTTON2,221,44,32,12
+    LTEXT           "number",IDC_STATIC,183,44,26,8
+    LTEXT           "Write:",IDC_STATIC,14,87,21,8
+    EDITTEXT        IDC_EDIT4,37,86,20,14,ES_AUTOHSCROLL
+    LTEXT           "flag",IDC_STATIC,62,87,21,8
+    EDITTEXT        IDC_EDIT5,85,85,18,14,ES_AUTOHSCROLL
+    LTEXT           "Start area",IDC_STATIC,107,87,43,8
+    EDITTEXT        IDC_EDIT6,153,86,21,14,ES_AUTOHSCROLL
+    LTEXT           "number",IDC_STATIC,182,88,26,8
+    PUSHBUTTON      "Write",IDC_BUTTON3,220,86,33,12
+    LTEXT           "the data for write",IDC_STATIC,123,111,73,18
+    EDITTEXT        IDC_EDIT7,14,110,100,16,ES_AUTOHSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Demo Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Demo\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2010\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Demo.EXE\0"
+            VALUE "ProductName", "Demo 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DEMO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 361
+    END
+
+    IDD_SYSTEMSETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 236
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 188
+    END
+
+    IDD_14443A_MF, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 395
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 321
+    END
+
+    IDD_ULTRALIGHT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 213
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 238
+    END
+
+    IDD_14443B, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 253
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 249
+    END
+
+    IDD_15693, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 277
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 202
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 Demo(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Demo.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

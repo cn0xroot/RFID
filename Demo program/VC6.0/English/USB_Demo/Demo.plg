@@ -1,0 +1,36 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Demo - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/Demo.res" /d "_DEBUG" /d "_AFXDLL" "D:\Project\VC6.0\USB_Demo\Demo.rc"" 
+Creating temporary file "C:\Users\Snail\AppData\Local\Temp\RSPC250.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Demo.pdb" /debug /machine:I386 /out:"Debug/Demo.exe" /pdbtype:sept 
+.\Debug\14443AMF.obj
+.\Debug\14443B.obj
+.\Debug\15693.obj
+.\Debug\Demo.obj
+.\Debug\DemoDlg.obj
+.\Debug\ErrorReason.obj
+.\Debug\Read.obj
+.\Debug\StdAfx.obj
+.\Debug\SYSTEMSETTING.obj
+.\Debug\ULTRALIGHT.obj
+.\Debug\Demo.res
+]
+Creating command line "link.exe @C:\Users\Snail\AppData\Local\Temp\RSPC250.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+
+
+
+<h3>Results</h3>
+Demo.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
